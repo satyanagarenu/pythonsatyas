@@ -1,0 +1,11 @@
+def number(n):
+    list_prime = []
+    for element in range(1,n+1):
+        count = 0 
+        for x in range(2,n+1):
+            if element%x == 0:
+                count+=1
+        if count == 1:
+            list_prime.append(element)
+    return list_prime
+print(number(100))
